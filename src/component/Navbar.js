@@ -16,12 +16,12 @@ function handelclick() {
 <Link to="/">
 <h1>Portfolio</h1> 
 </Link>
-<ul className="nav-menu" >
-    
-    <li><Link to="/home">Home</Link></li>
+<ul className="nav-menu"  >
+   {click === true? <>  <li><Link to="/home">Home</Link></li>
     <li><Link to="/about">About</Link></li>
     <li><Link to="/project">Project</Link></li>
-    <li><Link to="/contact">Contact</Link></li>
+    <li><Link to="/contact">Contact</Link></li> </> : null}
+   
 </ul>
 <div className='hamburger' onClick={handelclick}>
     {click === true? <FaTimes size={20} style={{color: "#fff"}} /> : <FaBars size={20} style={{color: "#fff"}} />}
