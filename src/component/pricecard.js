@@ -9,21 +9,7 @@ const Pricecard = () => {
         <div className="pricing">
           <div className="card-contianer" >
 
-            <div className="card">
-                <h3>- Basic -</h3>
-                <span className="bar"></span>
-                <p className="btc"> $ 100</p>
-                <p>- 3 Days -</p>
-                <p>- 3 pages -</p>
-                <p>- Features -</p>
-                <p>- Responsive Design -</p>
-                {/* <>
-                <Link to="/contact" className="btn" >PURCHASE NOW</Link>
-                </> */}
-
-            </div>
-
-            <div className="card">
+              <div className="card">
                 <h3>- Basic -</h3>
                 <span className="bar"></span>
                 <p className="btc"> $ 100</p>
@@ -32,10 +18,11 @@ const Pricecard = () => {
                 <p>- Features -</p>
                 <p>- Responsive Design -</p>
                 <Link to="/contact" className="btn" >PURCHASE NOW</Link>
+                
 
-            </div>
+             </div>
 
-            <div className="card">
+             <div className="card">
                 <h3>- Basic -</h3>
                 <span className="bar"></span>
                 <p className="btc"> $ 100</p>
@@ -43,9 +30,21 @@ const Pricecard = () => {
                 <p>- 3 pages -</p>
                 <p>- Features -</p>
                 <p>- Responsive Design -</p>
-                <link to="/contact" className="btn" >PURCHASE NOW</link>
+                <Link to="/contact" className="btn" >PURCHASE NOW</Link>
 
-            </div>
+             </div>
+
+             <div className="card">
+                <h3>- Basic -</h3>
+                <span className="bar"></span>
+                <p className="btc"> $ 100</p>
+                <p>- 3 Days -</p>
+                <p>- 3 pages -</p>
+                <p>- Features -</p>
+                <p>- Responsive Design -</p>
+                <Link to="/contact" className="btn" >PURCHASE NOW</Link>
+
+             </div>
 
 
 
