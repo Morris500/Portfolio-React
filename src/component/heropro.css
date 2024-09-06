@@ -7,7 +7,7 @@
 }
 .hero-img::before{
     content: "";
-    background: url("./image/IMG_20230829_141346.png");
+    background: url("../image/IMG_20230829_141346.png");
     background-size: cover;
     background-position: center top;
     height: 100%;

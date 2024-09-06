@@ -2,15 +2,15 @@ import React from 'react';
 import './workcard.css';
 import Workcard from './workcard';
 import ProjectCardData from './workcaddata';
-
+import "../image/IMG_20230829_141346.png"
 
 const Work = () => {
   return (
-    <div className='work-container'>
-       <h1 className='project-heading'>projects</h1>
-       <div className='project-container'>
+    <div>
        {ProjectCardData.map((value, index)=> {
+         
         return(
+        <> 
             <Workcard 
             key={index}
             imgsrc={value.imgsrc}
@@ -19,11 +19,12 @@ const Work = () => {
             view={value.view}
             view2={value.view2}
             />
-        )
+            {console.log(value.text)}
+       </> )
        })}
     
        </div>
-    </div>
+    
   )
 }
 

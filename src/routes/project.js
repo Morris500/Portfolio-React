@@ -3,14 +3,14 @@ import Navbar from "../component/Navbar";
 import Heropro from "../component/heropro";
 import Footer from "../component/footer";
 import Pricecard from '../component/pricecard';
-import Workcard from '../component/workcard';
+import Work from '../component/work';
 
 const project = () => {
   return (
   <div>
     <Navbar />
     <Heropro heading="PROJECT." text="Some of my most recent works" />
-    <Workcard />
+    <Work />
     <Pricecard />
      <Footer />
   </div>

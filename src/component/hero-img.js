@@ -1,8 +1,7 @@
 import "./hero-img.css";
 import { Link } from "react-router-dom";
 import React from 'react';
-import pic from "./image/IMG_20230829_141346.png"
-
+import pic from "../image/IMG_20230829_141346.png"
 const Hero = () => {
   return (
     <div className="hero">

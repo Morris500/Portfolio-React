@@ -1,20 +1,21 @@
 import React from 'react';
 import './workcard.css';
 import { Link } from "react-router-dom";
+import "../image/IMG_20230829_141346.png"
 
-const Workcard = () => {
+const Workcard = (props) => {
   return (
     <div className='work-container'>
        <h1 className='project-heading'>projects</h1>
        <div className='project-container'>
         <div className='projeect-card'>
-            <img src='' alt= "project picture" />
-            <h2 className='project-title'>Project Title</h2>
+            <img src={props.imgsrc} alt= "project picture" />
+            <h2 className='project-title'>{props.title}</h2>
             <div className='pro-details'>
-                <p>This is text</p>
+                <p> {props.text}  </p>
                 <div className='pro-btns'>
-                    <Link to='' className='btn'>View</Link>
-                    <Link to='' className='btn'>Source</Link>
+                    <Link to={props.view} className='btn'>View</Link>
+                    <Link to={props.view2} className='btn'>Source</Link>
                 </div>
             </div>
         </div>
@@ -23,4 +24,4 @@ const Workcard = () => {
   )
 }
 
-export default Workcard
+export default Workcard 
