@@ -1,7 +1,8 @@
 import "./hero-img.css";
 import { Link } from "react-router-dom";
 import React from 'react';
-import pic from "../image/IMG_20230829_141346.png"
+import pic from "../image/1000739225.jpg"
+//C:\Users\DELL\Documents\web dev tutorial\portfolio React\src\image\1000739225.jpg
 const Hero = () => {
   return (
     <div className="hero">
