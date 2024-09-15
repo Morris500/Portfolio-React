@@ -1,15 +1,15 @@
 import React from 'react';
 import './workcard.css';
 import { Link } from "react-router-dom";
-import "../image/IMG_20230829_141346.png"
+import  "../image/IMG_20230829_141346.png"
 
 const Workcard = (props) => {
   return (
     <div className='work-container'>
-       <h1 className='project-heading'>projects</h1>
+       
        <div className='project-container'>
-        <div className='projeect-card'>
-            <img src={props.imgsrc} alt= "project picture" />
+        <div className='project-card'>
+            <img src={props.src} alt= "project pic" />
             <h2 className='project-title'>{props.title}</h2>
             <div className='pro-details'>
                 <p> {props.text}  </p>

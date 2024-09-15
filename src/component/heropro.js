@@ -1,6 +1,6 @@
 import React from 'react';
 import "./heropro.css";
-import { Link } from "react-router-dom";
+
 // import pic from "./image/IMG_20230829_141346.png"
 
 

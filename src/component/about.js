@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link } from "react-router-dom"
 import "./about.css"
-import Dp from "../image/IMG_20230829_141346.png";
+
 
 const  Aboutcontent = () => {
   return (

@@ -8,12 +8,13 @@ const Work = () => {
   return (
     <div>
        {ProjectCardData.map((value, index)=> {
+         console.log(value.src);
          
         return(
         <> 
             <Workcard 
             key={index}
-            imgsrc={value.imgsrc}
+            src={value.src}
             title={value.title}
             text={value.text}
             view={value.view}
