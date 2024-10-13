@@ -1,5 +1,11 @@
 import "./contact.css";
-import React from 'react'
+import React from 'react';
+//import { GoogleApis } from "googleapis";
+
+const a = process.env.REACT_APP_SECRET;
+console.log(a);
+
+
 
 const Form = () => {
   return (

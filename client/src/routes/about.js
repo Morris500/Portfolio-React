@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from "../component/Navbar"
-import Footer from "../component/footer"
-import Aboutcontent from '../component/about';
+import Navbar from "../component/Navbar.js"
+import Footer from "../component/footer.js"
+import Aboutcontent from '../component/about.js';
 import Dp from "../image/IMG_20230829_141346.png";
-import AboutImg from "../component/aboutImg";
+import AboutImg from "../component/aboutImg.js";
 
 const about = () => {
   return (

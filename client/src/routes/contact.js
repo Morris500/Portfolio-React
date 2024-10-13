@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from "../component/Navbar"
-import Footer from "../component/footer"
-import Heropro from '../component/heropro'
-import Form from "../component/contact";
+import Navbar from "../component/Navbar.js"
+import Footer from "../component/footer.js"
+import Heropro from '../component/heropro.js'
+import Form from "../component/contact.js";
 
 const contact = () => {
   return (

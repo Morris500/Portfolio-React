@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from "../component/Navbar";
-import Heropro from "../component/heropro";
-import Footer from "../component/footer";
+import Navbar from "../component/Navbar.js";
+import Heropro from "../component/heropro.js";
+import Footer from "../component/footer.js";
 //import Pricecard from '../component/pricecard';
-import Work from '../component/work';
+import Work from '../component/work.js';
 import '../image/IMG_20230829_141346.png'
 
 const project = () => {

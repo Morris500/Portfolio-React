@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "./routes/home";
-import About from "./routes/about";
-import Project from "./routes/project";
-import Contact from "./routes/contact";
+import Home from "./routes/home.js";
+import About from "./routes/about.js";
+import Project from "./routes/project.js";
+import Contact from "./routes/contact.js";
 import { Route, Routes } from "react-router-dom";
 
 function App(params) {
