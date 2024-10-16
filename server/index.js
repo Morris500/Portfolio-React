@@ -9,27 +9,30 @@ const app = express();
 const port = 4000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-app.use(express.static(path.join(__dirname, "client/build")));
+//app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.json());
 app.use(bodyParser.urlencoded({extended:true}))
 //client\build\index.html
-app.use(cors({
-         origin: "http://localhost:3000"
-     }));
+app.use(cors());
+
 // {
 //     origin: "http://localhost:3000"
 // }
- app.get("/", (req, res)=>{
+
+ app.get("/cc", (req, res)=>{
 res.send("helloe world")
  })
 
-app.get("*", (req,res)=> {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
-});
+// app.get("*", (req,res)=> {
+//     //res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
+// });
 
-app.post("/contact", (req, res)=>{
+app.post("/", (req, res)=>{
+    
  const {Name, Email, Subject, Text} = req.body;
- console.log(Name, Email);
+ console.log(Name,Email, Subject, Text);
  //res.redirect("http://localhost:3000/contact")
+ res.json({ success: true });
  
 });
 
