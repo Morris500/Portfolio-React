@@ -22,15 +22,23 @@ return({...prevalue, [name]: value})
 
   async function submit(event) {
     try {
-      const url = "http://localhost:4000/contact";
       event.preventDefault();
-      const data = await axios.post(url, handelChange);
+      const data = await axios({
+        method:"POST",
+        url:  "http://localhost:4000", 
+        data: handelChange,
+         headers:{"content-Type":"application/json"},
+          timeout: 100000, 
+        });
        console.log(data);
        
     //   fetch(url, {
     //     method: 'POST', 
     //   headers:{'content-Type': 'application/json'},
     //   body: JSON.stringify(handelChange)
+    // }).then((data)=>{
+    //   console.log(data);
+      
     // })
       
       alert('message sent');
@@ -41,12 +49,12 @@ return({...prevalue, [name]: value})
   }
   return (
     <div className="form">
-        <form >
-            <input type="text" name="Name" value={handelChange.Name} onChange={detail} placeholder="Enter Your Name" />
-            <input type="text" name="Email" value={handelChange.Email} onChange={detail} placeholder="Enter Your Email" />
-            <input type="text" name="Subject" value={handelChange.Subject} onChange={detail} placeholder="Subject" />
-            <textarea rows={6} name="Text" value={handelChange.Text} onChange={detail} placeholder="Type your message"></textarea>
-            <button type="submit" onClick={submit} className="btnws">Submit</button>
+        <form onSubmit={submit} >
+            <input type="text" name="Name" value={handelChange.Name} onChange={detail} placeholder="Enter Your Name" required />
+            <input type="text" name="Email" value={handelChange.Email} onChange={detail} placeholder="Enter Your Email" required />
+            <input type="text" name="Subject" value={handelChange.Subject} onChange={detail} placeholder="Subject"  />
+            <textarea rows={6} name="Text" value={handelChange.Text} onChange={detail} placeholder="Type your message" required></textarea>
+            <button type="submit"  className="btnws">Submit</button>
         </form>
     </div>
   )
