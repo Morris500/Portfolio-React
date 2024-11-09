@@ -1,6 +1,7 @@
 import "./footer.css";
 import React from "react";
-import {FaFacebook, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaTwitter} from "react-icons/fa";
+import {FaFacebook, FaGithub, FaHome, FaLinkedin, FaMailBulk, FaPhone, FaTwitter} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
@@ -17,11 +18,11 @@ const Footer = () => {
                 </div>     
             </div>
             <div className="phone">
-                <h4><FaPhone size={20} style={{color:"#fff", marginRight: "2rem"}} /> +234-1234-5678 </h4>
+                <h4><FaPhone size={20} style={{color:"#fff", marginRight: "2rem"}} /> <a href="tel:+2348143044517" > +2348143044517 </a> </h4>
 
             </div>
             <div className="email">
-                <h4><FaMailBulk size={20} style={{color:"#fff", marginRight: "2rem"}} /> akunnemorris@gmail.com </h4>
+                <h4><FaMailBulk size={20} style={{color:"#fff", marginRight: "2rem"}} /> <a href="mailto:akunnemorris@gmail.com" >akunnemorris@gmail.com</a> </h4>
 
             </div>
         </div>
@@ -29,9 +30,9 @@ const Footer = () => {
             <h4>About the company</h4>
             <p>Hello i am Akunne Morris. A web developer react.js, node.js </p>
             <div className="social">
-            <FaFacebook size={30} style={{color:"#fff", marginRight: "1rem"}} />
+            <FaGithub size={30} style={{color:"#fff", marginRight: "1rem"}}> <a href="https://github.com/Morris500" >gcg </a> </FaGithub>
             <FaTwitter size={30} style={{color:"#fff", marginRight: "1rem"}} />
-            <FaLinkedin size={30} style={{color:"#fff", marginRight: "1rem"}} />
+            <FaLinkedin size={30} style={{color:"#fff", marginRight: "1rem"}} url="" />
             </div>
         </div>
      </div>

@@ -3,10 +3,10 @@ import React, {useState, useRef} from 'react';
 import axios from "axios";
 //import { GoogleApis } from "googleapis";
 import emailjs from '@emailjs/browser';
-const a = process.env.REACT_APP_SECRET;
-console.log(a);
-const b =process.env.REACT_APP_SERVICE;
-    console.log(b);
+// const a = process.env.REACT_APP_SECRET;
+
+// const b =process.env.REACT_APP_SERVICE;
+    
     
 
 const Form = () => {
@@ -15,8 +15,8 @@ const Form = () => {
     const form = useRef();
   
     function submit(e) {
-      const b =process.env.REACT_APP_SERVICE;
-    console.log(b);
+      //const b =process.env.REACT_APP_SERVICE;
+    
     
       e.preventDefault();
   
@@ -25,7 +25,7 @@ const Form = () => {
         })
         .then(
           (data) => {
-            console.log(data);
+            
             alert('message sent');
           },
           (error) => {
