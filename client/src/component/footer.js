@@ -30,9 +30,10 @@ const Footer = () => {
             <h4>About the company</h4>
             <p>Hello i am Akunne Morris. A web developer react.js, node.js </p>
             <div className="social">
-            <FaGithub size={30} style={{color:"#fff", marginRight: "1rem"}}> <a href="https://github.com/Morris500" >gcg </a> </FaGithub>
-            <FaTwitter size={30} style={{color:"#fff", marginRight: "1rem"}} />
-            <FaLinkedin size={30} style={{color:"#fff", marginRight: "1rem"}} url="" />
+             <a href="https://github.com/Morris500" target="_blank" rel="noopener noreferrer"> <FaGithub size={30} style={{color:"#fff", marginRight: "1rem"}} /> </a>
+               <FaTwitter size={30} style={{color:"#fff", marginRight: "1rem"}} />
+           <a href="https://www.linkedin.com/in/chiwenite-akunne-1031b9260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"> <FaLinkedin size={30} style={{color:"#fff", marginRight: "1rem"}} /> </a> 
+            
             </div>
         </div>
      </div>

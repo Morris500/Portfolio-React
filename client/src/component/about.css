@@ -22,3 +22,25 @@
     max-width: 90%;
     border: 1px solid #333;
 }
+.content .abtbtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.btn1{
+    padding: 3px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: rgb(248, 217, 15);
+    color: #222;
+    border:1px solid #fff;
+    font-weight:600;
+    cursor:pointer;
+    
+}
+.btn1:hover{
+    background: rgb(255, 255, 255, 0.2);
+    color:#fff;
+    transition:0.3s;
+}
